@@ -126,7 +126,7 @@ function HomePage() {
                     {posts.map((post) => (
                         <div key={post._id} className="postCard">
                             <h2 className="postTitle">{post.Title}</h2>
-                            <img src={`http://localhost:8000/images/${post.image}`} alt={post.Title} className="postImage" />
+                            <img src={`https://blogapp-backend-822d.onrender.com/images/${post.image}`} alt={post.Title} className="postImage" />
                             <p className="postDescription">{post.dsc}</p>
                             <div className="commentsSection">
                                 <h3>Comments</h3>
@@ -154,7 +154,7 @@ function HomePage() {
                     {profile ? (
                         <>
                             <h3 className="title">Profile</h3>
-                            <img src={`http://localhost:8000/images/${profile.profile}`} alt={profile.userName} className="profileImage" />
+                            <img src={`https://blogapp-backend-822d.onrender.com/images/${profile.profile}`} alt={profile.userName} className="profileImage" />
                             <p><strong>Username:</strong> {profile.userName}</p>
                             <p><strong>Email:</strong> {profile.email}</p>
                             <p><strong>Role:</strong> {profile.role}</p>
