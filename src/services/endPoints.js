@@ -1,6 +1,6 @@
 import axios from "axios";
 
-export const BaseUrl = "http://localhost:8000";
+export const BaseUrl = "https://blogapp-backend-822d.onrender.com";
 
 const instance = axios.create({
   baseURL: BaseUrl,
