@@ -46,7 +46,7 @@ function AllUsers() {
         {users.map((user) => (
           <div key={user._id} className="userCard">
             <img
-              src={`http://localhost:8000/images/${user.profile}`}
+              src={`https://blogapp-backend-822d.onrender.com/images/${user.profile}`}
               alt={user.userName}
               className="userImage"
             />
