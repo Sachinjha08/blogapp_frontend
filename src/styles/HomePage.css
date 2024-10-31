@@ -1,0 +1,160 @@
+/* Main container styling */
+.homePageContainer {
+  width: 90%;
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: rgba(20, 17, 17, 0.61);
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgb(255, 252, 252);
+  overflow: hidden;
+}
+.header{
+  color: white;
+  text-align: center;
+  margin-bottom: 25px;
+}
+.title{
+  color: crimson;
+}
+/* Main content layout with responsive adjustment */
+.mainContent {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+/* Posts section styling */
+.postsSection {
+  flex: 3;
+  min-width: 300px;
+  animation: fadeIn 0.6s ease-in;
+}
+
+/* Animation for fade-in effect */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Post card styling */
+.postCard {
+  background: rgba(45, 43, 43, 0.612);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 8px 20px rgb(255, 252, 252);
+}
+.postCard:hover{
+  box-shadow: 0 8px 20px rgb(245, 72, 72);
+}
+
+.postTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.postImage {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  object-fit: cover;
+}
+
+.postDescription {
+  font-size: 0.95rem;
+  color: yellow;
+}
+
+/* Comments section */
+.commentsSection {
+  margin-top: 15px;
+  color: white;
+}
+
+.commentInput {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+}
+
+.commentButton {
+  background-color: crimson;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+.commentButton:hover{
+  background-color: green;
+}
+.user{
+  color:rgb(140, 216, 242);
+}
+.errorMessage {
+  color: red;
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+/* Profile section styling with subtle animation */
+.profileSection {
+  flex: 1;
+  min-width: 250px;
+  background-color: #e8f0fe;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  height: 530px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  animation: fadeIn 0.8s ease-in;
+}
+
+.profileSection p {
+  color: #444;
+  font-size: 0.95rem;
+  margin: 5px 0;
+}
+
+.profileImage {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin: 25px 0 25px 0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+.logoutButton {
+  background-color: green;
+  color: #fff;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.logoutButton:hover {
+  background-color: crimson;
+}
+
+@media (max-width: 768px) {
+  .mainContent {
+    flex-direction: column;
+  }
+  .postsSection, .profileSection {
+    min-width: 100%;
+  }
+}

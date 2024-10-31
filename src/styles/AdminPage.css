@@ -1,0 +1,131 @@
+.allUsersContainer {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(20, 17, 17, 0.61);
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgb(255, 252, 252);
+  }
+  
+  .pageTitle {
+    text-align: center;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .usersList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .userCard {
+    background-color: rgba(45, 43, 43, 0.612);
+    border-radius: 10px;
+    padding: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgb(255, 252, 252);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .userCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgb(245, 72, 72);
+  }
+  
+  .userImage {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .userInfo p {
+    color: white;
+    margin: 5px 0;
+  }
+  
+  .deleteButton {
+    background-color: crimson;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .deleteButton:hover {
+    background-color: green;
+  }
+  
+  .errorMessage {
+    color: red;
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+  }
+  
+
+  /* add post */
+  .addPostContainer {
+    width: 90%;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+.pageTitle {
+    font-size: 1.8rem;
+    color: crimson;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.addPostForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.inputField,
+.textareaField,
+.fileInput {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+.textareaField {
+    resize: vertical;
+    height: 100px;
+}
+
+.submitButton {
+    background-color: crimson;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.submitButton:hover {
+    background-color: green;
+}
+
+.errorMessage {
+    color: red;
+    font-size: 0.9rem;
+    text-align: center;
+}

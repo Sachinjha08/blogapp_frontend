@@ -1,0 +1,154 @@
+/* Register */
+.register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(20, 17, 17, 0.61);
+  }
+  
+  .register-form {
+    width: 320px;
+    padding: 2rem;
+    background: rgba(20, 17, 17, 0.61);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgb(255, 252, 252);
+    text-align: center;
+  }
+  
+  .register-form h2 {
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+  
+  .profile-photo {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1rem;
+  }
+  
+  .profile-photo-preview {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #ccc;
+    cursor: pointer;
+  }
+  
+  .register-form input[type="text"],
+  .register-form input[type="email"],
+  .register-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .register-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .register-form button:hover {
+    background-color: crimson;
+  }
+  
+  .redirect-link {
+    margin-top: 1rem;
+    color: #666;
+  }
+  
+  .redirect-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .redirect-link a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Login */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(20, 17, 17, 0.61);
+  }
+  
+  .login-form {
+    width: 320px;
+    padding: 2rem;
+    background: rgba(20, 17, 17, 0.61);
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgb(255, 252, 252);
+    text-align: center;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1.5rem;
+    color: white;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 0.75rem;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .login-form button:hover {
+    background-color: crimson;
+  }
+  
+  .error-message {
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .success-message {
+    color: green;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .redirect-link {
+    margin-top: 1rem;
+    color: #666;
+  }
+  
+  .redirect-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .redirect-link a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  
